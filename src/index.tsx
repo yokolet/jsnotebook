@@ -42,16 +42,17 @@ const App = () => {
     setCode(result.outputFiles[0].text);
   }
 
-  return <div>
+  return (<div>
     <textarea
       value={input}
-      onChange={e => setInput(e.target.value)}
+      onChange={(e) => setInput(e.target.value)}
     ></textarea>
     <div>
       <button onClick={onClick}>Submit</button>
     </div>
     <pre>{code}</pre>
   </div>
+  );
 }
 
 ReactDOM.render(
