@@ -13,6 +13,7 @@ const App = () => {
     await esbuild.initialize({
       worker: true,
       wasmURL: '/esbuild.wasm',
+      //wasmURL: 'https://unpkg.com/esbuild-wasm@0.17.16/esbuild.wasm',
     });
     ref.current = true;
   };
