@@ -44,7 +44,7 @@ const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
       resizeHandles: ['e'],
       onResizeStop: (event, data) => {
         setWidth(data.size.width);
-      }
+      },
     };
   } else {
     resizableProps = {
