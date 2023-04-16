@@ -13,7 +13,7 @@ interface CodeEditorProps {
 const CodeEditor: React.FC<CodeEditorProps> = ({ onChange, initialValue }) => {
   const editorRef = useRef<monaco.editor.IStandaloneCodeEditor>();
   const onEditorDidMount: OnMount = (
-    editor:monaco.editor.IStandaloneCodeEditor,
+    editor: monaco.editor.IStandaloneCodeEditor,
     monacoEditor: any,
   ) => {
     editorRef.current = editor;
@@ -50,10 +50,10 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ onChange, initialValue }) => {
         value={initialValue}
         theme="vs-dark"
         language="javascript"
-        height="500px"
+        height="100%"
         options={{
           wordWrap: 'on',
-          minimap: {enabled: false},
+          minimap: { enabled: false },
           showUnused: false,
           folding: false,
           lineNumbersMinChars: 3,
@@ -62,7 +62,8 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ onChange, initialValue }) => {
           automaticLayout: true,
         }}
       />
-    </div>);
-}
+    </div>
+  );
+};
 
 export default CodeEditor;

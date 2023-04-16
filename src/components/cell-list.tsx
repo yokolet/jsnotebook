@@ -8,12 +8,12 @@ const CellList: React.FC = () => {
     order.map((id) => data[id]
     ));
 
-  const renderedCells = cells.map(cell =>
+  const renderedCells = cells.map((cell) => (
     <Fragment key={cell.id}>
       <CellListItem cell={cell} />
       <AddCell previousCellId={cell.id} />
     </Fragment>
-  );
+  ));
 
   return (
     <div>
