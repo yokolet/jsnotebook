@@ -7,6 +7,7 @@
 
 .w-md-editor ul {
   line-height: 1;
+  list-style: circle;
 }
 
 .text-editor .w-md-editor-bar svg {
@@ -26,6 +27,11 @@
 
 .text-editor em {
   font-style: italic;
+}
+
+.text-editor .wmde-markdown {
+  color: #dee5ed;
+  background-color: #1d2a38;
 }
 
 .text-editor .wmde-markdown hr {
