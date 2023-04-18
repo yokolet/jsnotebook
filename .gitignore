@@ -6,12 +6,16 @@
 .pnp.js
 
 packages/local-client/node_modules
+packages/local-api/node_modules
+packages/cli/node_modules
 
 # testing
 /coverage
 
 # production
 /build
+packages/local-api/dist
+packages/cli/dist
 
 # misc
 .DS_Store
