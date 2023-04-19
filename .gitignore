@@ -16,6 +16,7 @@ packages/cli/node_modules
 /build
 packages/local-api/dist
 packages/cli/dist
+packages/local-client/build
 
 # misc
 .DS_Store
