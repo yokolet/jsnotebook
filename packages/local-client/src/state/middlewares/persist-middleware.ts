@@ -27,9 +27,9 @@ export const persistMiddleware = (
         if (timer) {
           clearTimeout(timer);
         }
-        timer = setTimeout(() => {
-          saveCells()(dispatch, getState);
-        }, 250);
+        // timer = setTimeout(() => {
+        //   saveCells()(dispatch, getState);
+        // }, 250);
       }
     };
   };
